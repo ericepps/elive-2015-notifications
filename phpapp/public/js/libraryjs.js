@@ -8,9 +8,9 @@ $(function() {
 })
 
 $(document).on('click', 'button.return-book', function(event){
-    var $target = event.target
+    var $target = $(event.target)
     var book = $target.closest('.book')
-    var bookId = book.id
+    var bookId = book.attr('id')
     var onHoldUser = 'mx2awilson'
     var headline = 'Library book on hold is available'
     var description = 'A book you have on hold is now available ISBN: ' + bookId

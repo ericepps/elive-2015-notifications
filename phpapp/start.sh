@@ -3,7 +3,7 @@
 #INIFILE="$(pwd)/server/server.ini"
 DOCROOT="$(pwd)/public"
 ROUTER="$(pwd)/server/router.php"
-HOST=localhost
+HOST=library.bret.edu
 PORT=8999
  
 PHP=$(which php)

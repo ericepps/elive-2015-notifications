@@ -3,7 +3,7 @@ $(document).on('click', 'button.return-book', function(event){
     var book = $target.closest('.book')
     var bookId = book.attr('id')
 
-    var phpReturnBookUrl = 'http://localhost:8999/api/library/return_book/' + bookId
+    var phpReturnBookUrl = 'http://library.bret.edu:8999/api/library/return_book/' + bookId
     $.ajax({
         url:phpReturnBookUrl,
         type: 'POST',
